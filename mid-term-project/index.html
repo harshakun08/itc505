@@ -1,61 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Pig Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Adventure</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
-        <!-- Header content goes here -->
-        <h1>Welcome to Die Rolling Game Challenge</h1>
-        <marquee>******************* Harshini Game changer Welcomes you to the game *******************</marquee>
+        <h1>GAME OF FUN</h1>
     </header>
-    <main>
-        <section class="player player--0 player--active">
-            <h2 class="name" id="name--0">Player 1</h2>
-            <p class="score" id="score--0">43</p>
-            <div class="current">
-                <p class="current-label">Current</p>
-                <p class="current-score" id="current--0">0</p>
-            </div>
-        </section>
-        <section class="player player--1">
-            <h2 class="name" id="name--1">Player 2</h2>
-            <p class="score" id="score--1">24</p>
-            <div class="current">
-                <p class="current-label">Current</p>
-                <p class="current-score" id="current--1">0</p>
-            </div>
-        </section>
+    <div id="story">
+        <p id="story-text">Welcome to the adventure!</p>
+        <div id="choices"></div>
+        <img id="story-image" src="" alt="Story Image">
+        <button id="restart-btn">Restart Game</button>
+    </div>
 
-        <img src="dice-5.png" alt="Playing dice" class="dice" />
-        <button class="btn btn--new">🔄 New game</button>
-        <button class="btn btn--roll">🎲 Roll dice</button>
-        <button class="btn btn--hold">📥 Hold</button>
-    </main>
     <footer>
+<p>Addendum : During the development of the " GAME OF FUN " game, I followed a systematic approach. Firstly, I outlined the story flow and choices, ensuring each path offered unique endings. Challenges arose in aligning button clicks with correct story progressions, which I overcame by refining the consequence array. Creative choices included designing clear and appealing CSS styles for better user engagement. Insights gained highlighted the importance of thorough testing to ensure smooth functionality. Overall, the process emphasized clear planning, meticulous coding, and iterative refinement, resulting in a polished interactive experience for players.</p>
         <p>Last updated: 
             <span id="lastModified"></span>
         </p>
-
-        <p>Addendum:
-            In the HTML file, I created the structure for a simple Pig Game application. It includes sections for two players, their scores, and a dice roll button. Additionally, I added a header for the game title and a footer for copyright information. </p>
-
-<p>In the CSS file, I styled the elements to create a visually appealing layout. This included setting up flexbox for the main container, styling player sections, buttons, and the dice image. I also added styles for the header and footer to position them at the top and bottom of the page respectively. </p>
-
-<p>In the JavaScript file, I implemented the game logic. This involved setting up variables to track scores and the active player, creating functions for rolling the dice, holding scores, and switching players based on game rules. Additionally, I added event listeners to handle user interactions with the buttons.</p>
-          
     </footer>
+    <script src="script.js"></script>
     <script type="text/javascript">
          var x = document.lastModified;
          document.getElementById('lastModified').textContent = x;
-    </script>
-    <script src="script.js"></script>
+    </script>
 </body>
-
 </html>
